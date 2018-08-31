@@ -1,9 +1,9 @@
 pipeline {
-    agent { docker { image 'python:3.5.1' } }
+    agent { docker { image 'webgoat/webgoat-7.1' } }
     stages {
         stage('build') {
             steps {
-                sh 'python --version'
+                sh 'ls -l'
             }
         }
         stage("Dependency Check") {
