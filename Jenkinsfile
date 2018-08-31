@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      image 'webgoat/webgoat-7.1'
-    }
-
-  }
+  agent any
   stages {
     stage('build') {
       steps {
