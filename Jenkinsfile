@@ -13,6 +13,8 @@ pipeline {
     		        dependencyCheckPublisher canComputeNew: false, defaultEncoding: '', healthy: '', pattern: '', unHealthy: ''
 
             		archiveArtifacts allowEmptyArchive: true, artifacts: '**/dependency-check-report.html'
+                
+                    archiveArtifacts allowEmptyArchive: true, artifacts: '**/dependency-check-report.xml'
 
             }
         }            
